@@ -20,7 +20,9 @@
     <h2>De werkdagen in omgekeerde volgorde zijn</h2>
     <p id="ReverseAlleWerkDagen"></p>
 
-    <h2></h2>
+    <h2>De weekenddagen in omgekeerde volgorde zijn</h2>
+    <p id="ReverseWeekendDagen"></p>
+    </h2>
 
     <script>
         const AlleDagen = [" Maandag", " Dinsdag", " Woensdag", " Donderdag", " Vrijdag", " Zaterdag", " Zondag"];
@@ -38,6 +40,9 @@
 
         var ReverseAlleWerkDagen = AlleDagen.slice(-5);
         document.getElementById("ReverseAlleWerkDagen").innerHTML = ReverseAlleWerkDagen;
+
+        var ReverseWeekendDagen = AlleDagen.slice(0, 2);
+        document.getElementById("ReverseWeekendDagen").innerHTML = ReverseWeekendDagen;
 
 
     </script>
