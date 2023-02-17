@@ -8,11 +8,22 @@
     <h2>Alle dagen van de week zijn. </h2>
     <p id="AlleDagen"></p>
 
+    <h2>De werkdagen zijn</h2>
+    <p id="AlleWerkDagen"></p>
+
+    <h2>De weekenddagen zijn</h2>
+    <p id="Weekenddagen"></p>
+
     <h2></h2>
 
     <script>
-        const AlleDagen = [" Maandag", " Dinsdag", " Woensdag", " Donderdag", " Vrijdag", " Zaterdag", " Zondag"]
-        document.getElementById("AlleDagen").innerHTML = AlleDagen
+        let AlleDagen = [" Maandag", " Dinsdag", " Woensdag", " Donderdag", " Vrijdag", " Zaterdag", " Zondag"];
+        document.getElementById("AlleDagen").innerHTML = AlleDagen;
+
+        var AlleWerkDagen = AlleDagen.slice(0, 5);
+        document.getElementById("AlleWerkDagen").innerHTML = AlleWerkDagen;
+
+
     </script>
 
 </body>
