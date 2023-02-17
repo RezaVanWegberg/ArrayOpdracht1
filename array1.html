@@ -17,11 +17,14 @@
     <h2></h2>
 
     <script>
-        let AlleDagen = [" Maandag", " Dinsdag", " Woensdag", " Donderdag", " Vrijdag", " Zaterdag", " Zondag"];
+        const AlleDagen = [" Maandag", " Dinsdag", " Woensdag", " Donderdag", " Vrijdag", " Zaterdag", " Zondag"];
         document.getElementById("AlleDagen").innerHTML = AlleDagen;
 
         var AlleWerkDagen = AlleDagen.slice(0, 5);
         document.getElementById("AlleWerkDagen").innerHTML = AlleWerkDagen;
+
+        var Weekenddagen = AlleDagen.slice(-2);
+        document.getElementById("Weekenddagen").innerHTML = Weekenddagen;
 
 
     </script>
